@@ -7,14 +7,13 @@ import SearchIcon from '@mui/icons-material/Search';
 import AppsIcon from '@mui/icons-material/Apps';
 import  Avatar from '@mui/material/Avatar';
 import user from '../images/R.png';
+import tmpDrawer from './tmpDrawer';
 
 function Header() {
   return (
     <div className='header'>
         <div className='header_info'>
-            <IconButton>
-        <MenuIcon />
-            </IconButton>
+            <tmpDrawer />
             <img src={formImage} alt='logo' style={{height: '40px',
     width: 'auto'}} className='form_image'/>
     <div className='info'>
