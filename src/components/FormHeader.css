@@ -49,7 +49,7 @@
   }
   
   .publish_btn {
-    background-color: #6535a5 !important;
+    background-color: rgb(103, 58, 183) !important;
     color: white !important;
     text-transform: none !important;
     font-weight: 500 !important;
@@ -59,7 +59,7 @@
   }
   
   .publish_btn:hover {
-    background-color: #7a51bc !important;
+    background-color: rgb(121, 79, 193) !important;
   }
   
   .user_avatar {
