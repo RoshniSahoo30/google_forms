@@ -6,6 +6,7 @@ import FolderOpenIcon from '@mui/icons-material/FolderOpen';
 import './Mainbody.css';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import SortByAlphaIcon from '@mui/icons-material/SortByAlpha';
+import forms from '../images/form.png';
 
 
 function Mainbody() {
@@ -30,9 +31,10 @@ function Mainbody() {
             <FolderOpenIcon style={{fontSize:'20px', color:'black'}} />
             </IconButton>
           </div>
+          </div>
       <div className='main_body_docs'>
         <div className='docs_card'>
-        <img className='doc_image' />
+        <img src={forms} className='doc_image' />
           <div className='doc_card_content'>
             <h5></h5>
             <div className='doc_content' style={{fontSize:'12px',color:'grey'}}>
@@ -41,7 +43,6 @@ function Mainbody() {
             </div>
           </div>
         </div>
-    </div>
     </div>
     </div>
   )
