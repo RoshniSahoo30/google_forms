@@ -7,8 +7,16 @@ import './Template.css';
 import blank from '../images/blank.png';
 import party from '../images/party.png';
 import contact from '../images/contact.png';
+import uuid from 'react-uuid';
+import { useNavigate } from 'react-router-dom';
 
-const Template = () => {
+function Template () {
+    const history= useNavigate();
+
+    const createForm = () => {
+        const id = uuid(); 
+        history("/form/"+id);
+    }
   return (
     <div className='template_section'>
         <div className='template_top'>
@@ -26,7 +34,7 @@ const Template = () => {
             </div>
         </div>
         <div className='template_body'>
-            <div className='card'>
+            <div className='card' onClick={createForm}>
                 <img src={blank} alt='blank' className='card_image'/>
                 <p className='card_title'>Blank</p>
                 </div>

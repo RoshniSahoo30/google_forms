@@ -1,0 +1,95 @@
+.form_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 24px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    min-height: 64px;
+  }
+  
+  .form_header_left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .form_header_left img {
+    height: 40px;
+    width: auto;
+  }
+  
+  .form_name {
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: 400;
+    color: #3c4043;
+    background: transparent;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+    min-width: 200px;
+  }
+  
+  .form_name:hover {
+    background-color: #f8f9fa;
+  }
+  
+  .form_name:focus {
+    background-color: #ffffff;
+    box-shadow: 0 0 0 2px #4285f4;
+  }
+  
+  .form_header_right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .publish_btn {
+    background-color: #6535a5 !important;
+    color: white !important;
+    text-transform: none !important;
+    font-weight: 500 !important;
+    padding: 6px 16px !important;
+    border-radius: 4px !important;
+    margin: 0 8px !important;
+  }
+  
+  .publish_btn:hover {
+    background-color: #7a51bc !important;
+  }
+  
+  .user_avatar {
+    width: 32px !important;
+    height: 32px !important;
+    margin-left: 8px !important;
+  }
+  
+  /* Icon button styling */
+  .form_header_right .MuiIconButton-root {
+    color: #5f6368;
+    padding: 8px;
+  }
+  
+  .form_header_right .MuiIconButton-root:hover {
+    background-color: #f8f9fa;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .form_header {
+      padding: 8px 16px;
+    }
+    
+    .form_name {
+      min-width: 150px;
+      font-size: 16px;
+    }
+    
+    .form_header_right {
+      gap: 4px;
+    }
+  }
