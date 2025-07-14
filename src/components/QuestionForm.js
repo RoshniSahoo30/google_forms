@@ -14,7 +14,7 @@ import TitleIcon from '@mui/icons-material/Title';
 import OndemandVideoIcon from '@mui/icons-material/OndemandVideo';
 import SubjectIcon from '@mui/icons-material/Subject';
 
-import './Question_form.css';
+import './QuestionForm.css';
 
 function Question_form() {
   const [questionText, setQuestionText] = useState('');

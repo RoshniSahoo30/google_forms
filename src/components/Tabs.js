@@ -2,7 +2,6 @@ import React from 'react'
 import { Tabs, Tab } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 import Paper from '@mui/material/Paper';
-import { BiFontFamily } from 'react-icons/bi';
 
 const useStyles = makeStyles({
   root: {

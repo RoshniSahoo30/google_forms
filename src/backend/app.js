@@ -12,7 +12,9 @@ app.use(function(req, res, next) {
     next();
 });
 
-
+app.get('/', (req, res) => {
+    res.redirect('http://localhost:3000');
+  });
 
 app.post('/form-submit', (req, res) => {
     const formData = req.body;

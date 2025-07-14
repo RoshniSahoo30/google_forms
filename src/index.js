@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import { StateProvider } from './components/StateProvider';
 import Reducer, { initialState } from './components/Reducer';
-import * as serviceWorker from './serviceWorker';
+//import * as serviceWorker from './serviceWorker';
+import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -13,5 +14,5 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
-
-serviceWorker.unregister();
+reportWebVitals();
+//serviceWorker.unregister();

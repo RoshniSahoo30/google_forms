@@ -58,22 +58,22 @@ function TmpDrawer() {
       <Divider />
       <List style={{marginLeft:'08px', marginRight:'8px', marginTop:'1px'}}>
         <ListItem className='list_item'>
-      <img src={docImage} className={classes.slideImages} />
+      <img src={docImage} alt='doc_image' className={classes.slideImages} />
       <div className={classes.listItem}>Docs</div>
       </ListItem>
 
       <ListItem className='list_item'>
-      <img src={sheetImage} className={classes.slideImages} />
+      <img src={sheetImage} alt='sheet_image' className={classes.slideImages} />
       <div className={classes.listItem}>Sheets</div>
       </ListItem>
 
       <ListItem className='list_item'>
-      <img src={slideImage} className={classes.slideImages} />
+      <img src={slideImage} alt='slide_image'className={classes.slideImages} />
       <div className={classes.listItem}>Slides</div>
       </ListItem>
 
       <ListItem className='list_item'>
-      <img src={formImage} className={classes.slideImages} />
+      <img src={formImage} alt='form_image'className={classes.slideImages} />
       <div className={classes.listItem}>Forms</div>
       </ListItem>
 
@@ -92,7 +92,7 @@ function TmpDrawer() {
       <Divider />
       <List style={{marginLeft:'08px', marginRight:'08px', marginTop:'1px'}}>
         <ListItem className='list_item'>
-          <img src={driveImage} className={classes.slideImages} />
+          <img src={driveImage} alt='drive_image' className={classes.slideImages} />
           <div className={classes.listItem}>My Drive</div>
         </ListItem>
       </List>
