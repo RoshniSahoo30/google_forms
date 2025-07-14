@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import FormHeader from './components/FormHeader';
 import './components/FormHeader.css';
 import CenteredTabs from './components/Tabs';
-import Questionsform from './components/QuestionForm';
+import Questionform from './components/QuestionForm';
 
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
                    <>
                     <FormHeader />
                     <CenteredTabs />
-                    <Questionsform />
+                    <Questionform />
                    </>
                   }
         />

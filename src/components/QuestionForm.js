@@ -16,7 +16,7 @@ import SubjectIcon from '@mui/icons-material/Subject';
 
 import './QuestionForm.css';
 
-function Question_form() {
+function QuestionForm() {
   const [questionText, setQuestionText] = useState('');
   const [questionType, setQuestionType] = useState('Multiple choice');
   const [options, setOptions] = useState(['Option 1']);
@@ -348,4 +348,4 @@ function Question_form() {
   );
 }
 
-export default Question_form;
+export default QuestionForm;
