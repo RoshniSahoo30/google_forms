@@ -7,7 +7,6 @@
   "type": "commonjs",
   "main": "app.js",
   "scripts": {
-    "start": "node App.js",
     "dev": "nodemon app.js"
   },
   "dependencies": {
