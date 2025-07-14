@@ -1,16 +1,19 @@
-body {
-    margin: 0;
-    padding: 0;
-    background: #f0ebf8; /* Light lavender */
-    font-family: 'Roboto', sans-serif;
-  }
+.question_form_container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: lavender;
+  padding: 20px;
+
+  box-sizing: border-box;
+}
 
 .question_form {
-    max-width: 768px;
+    width: 760px;
     margin: 0 auto;
-    padding: 20px;
-    background: #f0ebf8;;
-    min-height: 100vh;
+    padding: 24px;
+    background: lavender;
+  
   }
   
   .section {
@@ -212,7 +215,7 @@ body {
   
   .question_form_footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     padding-top: 16px;
     border-top: 1px solid #e0e0e0;
@@ -220,7 +223,9 @@ body {
   
   .question_form_actions {
     display: flex;
-    gap: 8px;
+    gap: 5px;
+    justify-content: flex-end;
+    align-items: center;
   }
   
   .question_form_actions .MuiIconButton-root {
@@ -324,6 +329,21 @@ body {
     }
     
     .question_form_toggle {
+    
       justify-content: space-between;
     }
   }
+  .question_form_right {
+    position: absolute;
+    top: 200px;
+    right: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
+    padding: 8px;
+    border-radius: 8px;
+    z-index: 10;
+  }
+  
