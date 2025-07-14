@@ -4,15 +4,19 @@
   align-items: flex-start;
   background-color: lavender;
   padding: 20px;
-
+  min-height: 100vh;
   box-sizing: border-box;
+  position: relative;
 }
 
 .question_form {
     width: 760px;
     margin: 0 auto;
     padding: 24px;
-    background: lavender;
+    
+      background: transparent;
+    
+    
   
   }
   
@@ -335,15 +339,14 @@
   }
   .question_form_right {
     position: absolute;
-    top: 200px;
-    right: 24px;
+    right: 280px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
     background-color: white;
-    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
-    padding: 8px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
     border-radius: 8px;
-    z-index: 10;
+    padding: 6px;
+    margin-top: -120px;
   }
+  
   
