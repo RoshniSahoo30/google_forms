@@ -121,6 +121,25 @@ function QuestionForm() {
       }, 100);
     }
   };
+  const copyQuestion = (id) => {
+    const questionToCopy = questions.find((q) => q.id === id);
+    if (!questionToCopy) return;
+  
+    const copiedQuestion = {
+      ...questionToCopy,
+      id: Date.now(), // Give it a new unique ID
+    };
+  
+    const index = questions.findIndex((q) => q.id === id);
+    const updatedQuestions = [
+      ...questions.slice(0, index + 1),
+      copiedQuestion,
+      ...questions.slice(index + 1),
+    ];
+  
+    setQuestions(updatedQuestions);
+  };
+  
 
   useEffect(() => {
     const selected = questions.find(q => q.id === selectedQuestionId);
@@ -300,7 +319,9 @@ function QuestionForm() {
 
               <div className="question_form_footer">
                 <div className="question_form_actions">
-                  <IconButton><ContentCopyIcon /></IconButton>
+                <IconButton onClick={() => copyQuestion(q.id)}>
+                  <ContentCopyIcon />
+                  </IconButton>
                   <IconButton onClick={() => deleteQuestion(q.id)}><DeleteIcon /></IconButton>
                   <Divider
                     orientation="vertical"
